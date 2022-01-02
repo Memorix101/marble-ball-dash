@@ -6,7 +6,7 @@ It was my first game I made myself (I was 14 back then).
 
 It is available on [IndieDB](https://www.indiedb.com/games/marble-ball-dash)
 
-Marble Ball Dash is written in [Lite-C](https://en.wikipedia.org/wiki/Lite-C) using [3D Gamestudio 7](https://en.wikipedia.org/wiki/3D_GameStudio)
+Marble Ball Dash was written in [Lite-C](https://en.wikipedia.org/wiki/Lite-C) using [3D Gamestudio 7](https://en.wikipedia.org/wiki/3D_GameStudio)
 
 #### This repo
 This is an updated version of the original. The entire code base has been rewritten and ported to Acknex Engine 8. Assets have been updated and redesigned - with the intention to keep as close to the original as possible.
