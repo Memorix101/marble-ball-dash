@@ -1,0 +1,32 @@
+Project Name: Marble Ball Dash
+Base Directory: D:\Freak Mind Games\Projects 2021\Marble Ball Dash GS8 Rework
+Main Script: 
+File: .\levels\level1.wmb
+File: .\levels\palette.pcx
+File: ..\Marble Ball Dash GS8 Rework\main.c
+File: .\models\coin.mdl
+File: .\models\finish.mdl
+File: .\music\track1.ogg
+File: .\music\track2.ogg
+File: .\music\track3.ogg
+File: .\music\track4.ogg
+File: .\music\track5.ogg
+File: .\sounds\ball.wav
+File: .\sounds\bounce.wav
+File: .\sounds\coin.wav
+File: .\sprites\finished.bmp
+File: .\sprites\game_over.bmp
+File: .\sprites\logo.bmp
+File: .\sprites\logo_big.bmp
+File: .\textures\ball_texture.bmp
+File: .\textures\coin.bmp
+File: .\textures\finish.bmp
+File: .\textures\skycube+6.bmp
+File: .\textures\skycube+6.tga
+File: ..\Marble Ball Dash GS8 Rework\ui.c
+File: ..\Marble Ball Dash GS8 Rework\entities.c
+File: ..\Marble Ball Dash GS8 Rework\triggers.c
+Opened: D:\Freak Mind Games\Projects 2021\Marble Ball Dash GS8 Rework\main.c,104,0
+Opened: D:\Freak Mind Games\Projects 2021\Marble Ball Dash GS8 Rework\ui.c,0,0
+Opened: D:\Freak Mind Games\Projects 2021\Marble Ball Dash GS8 Rework\entities.c,0,0
+Opened: D:\Freak Mind Games\Projects 2021\Marble Ball Dash GS8 Rework\triggers.c,0,0

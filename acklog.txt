@@ -1,0 +1,67 @@
+Log of A8 Engine 8.47.1 run at Sun Jan 02 17:16:50 2022
+memor on Windows NT/2000/XP version 6.2 Build 9200
+Options main.c -diag 
+App: C:\Program Files (x86)\GStudio8\acknex.exe in D:\Freak Mind Games\Projects 2021\Marble Ball Dash GS8 Rework\
+
+MM mixer opened
+DSOUND device opened
+DI interface opened
+Start Window opened(c) Conitec - www.3dgamestudio.com
+A8 Engine - Free Edition V8.47.1 - Mar  9 2016
+Development version
+Registered to: Free Version
+
+Mouse found
+Speakers (Realtek(R) Audio) opened
+NVIDIA GeForce GTX 1060 6GB pure T&L device 1ff9 detected
+D3D device NVIDIA GeForce GTX 1060 6GB 1ff9 selected.
+ackphysX.dll opened
+Compiling MAIN.C - [Esc] to abort...
+PATH C:\Program Files (x86)\GStudio8\templates\images\..
+PATH fonts\
+PATH levels\
+PATH models\
+PATH music\
+PATH sounds\
+PATH sprites\
+PATH textures\.......
+on_ent_remove_px: function not found
+on_exit_px: function not found
+on_level_load_px: function not found.................... 0.272 sec
+Running MAIN.C.
+19 objects
+Main started at 1.399
+D3D_Init Window: 720x480 -> Window: 1x720x480x32
+Video memory found: 4093 MB
+D3D_Resize Window: 1024x768 -> Window: 1x1024x768x32
+song_startup started
+music/track1.ogg audio opened
+Main loop at 1.554
+Opening PhysX... ok
+LevelInit at 3.773
+1 entities 1 cameras 0 lights 0 sounds 0 paths
+ 2 lmaps 4 textures 4 meshes 6 submeshes 48 faces...ok
+LevelReady at 3.781....
+1st frame with 4093 MB. at 3.808
+LevelInit at 5.092
+21 entities 0 cameras 0 lights 0 sounds 0 paths
+ 2 lmaps 2 textures 9 meshes 9 submeshes 108 faces...ok
+LevelReady at 5.237
+HEADRELATIVE sound: 1
+LevelInit at 12.805
+21 entities 0 cameras 0 lights 0 sounds 0 paths
+ 2 lmaps 2 textures 9 meshes 9 submeshes 108 faces...ok
+LevelReady at 12.947
+LevelInit at 19.895
+1 entities 1 cameras 0 lights 0 sounds 0 paths
+ 2 lmaps 4 textures 4 meshes 6 submeshes 48 faces...ok
+LevelReady at 19.903
+Normal exit at 20.495
+Close level,DLL,objects
+Free input,funcs,panels,defs,syns,views,strings,vars..ok
+Free sounds,bmaps,fonts,hash,defs1,script..ok
+Close dx,multimedia,D3D,engine,nexus..ok
+A8 Engine - Free Edition V8.47.1 - Mar  9 2016
+(c) Conitec - www.3dgamestudio.com
+Registered to: Free Version
+Close window at 20.583
