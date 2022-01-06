@@ -96,7 +96,7 @@ function main()
 	AddFontResource("Fonts/Asimov.ttf"); // neat trick from AUM 114 how to use TTF without installing it
 	wait(1);
 	
-	setup_ui();
+	setup_ui();  	
 	
 	physX_open();
 	

@@ -19,7 +19,7 @@ action coin()
   	/*pXent_settype(my, PH_STATIC, PH_BOX );
 	pXent_settriggerflag(my, NX_TRIGGER_ON_ENTER, 1);
 	my.event = coin_trigger;*/ 
-	
+	set(my, SHADOW);
 	set(my,PASSABLE);
 	var trigger_entered = false;
 	var fade = 100;
@@ -50,6 +50,7 @@ action coin()
 
 action rotate() // tilt
 {
+	set(my, SHADOW);
 	pXent_settype(my, PH_STATIC , PH_POLY);
 	while(my)
 	{
@@ -62,6 +63,7 @@ action rotate() // tilt
 
 action rotate2() // pan
 {
+	set(my, SHADOW);
 	pXent_settype(my, PH_STATIC , PH_POLY);
 	while(my)
 	{
@@ -74,6 +76,7 @@ action rotate2() // pan
 
 action crate()
 {
+	set(my, SHADOW);
 	pXent_settype (my, PH_RIGID, PH_BOX); // set the physics entity type
 	pXent_setmass (my, 1); // and its mass
 	pXent_setfriction (my, 50); // set the friction
@@ -91,6 +94,7 @@ action finish()
 
 action dummy_ball()
 {
+	set(my, SHADOW);
 	pXent_settype (my, PH_RIGID, PH_SPHERE); // set the physics entity type
 	pXent_setmass (my, 15); // and its mass
 	pXent_setfriction (my, 100); // set the friction
@@ -109,6 +113,8 @@ action ball()
 	
 	VECTOR spawn_pos;
 	vec_set(spawn_pos, vector(my.x, my.y, my.z));
+	
+	set(my, SHADOW);
 	
 	player = my;
 	
