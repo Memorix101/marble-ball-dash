@@ -16,10 +16,12 @@ function p_fountain_sprite(ENTITY* p)
 
 action coin()
 {  
+	set(me, CAST);
+	set(me, SHADOW);
+
   	/*pXent_settype(my, PH_STATIC, PH_BOX );
 	pXent_settriggerflag(my, NX_TRIGGER_ON_ENTER, 1);
 	my.event = coin_trigger;*/ 
-	set(my, SHADOW);
 	set(my,PASSABLE);
 	var trigger_entered = false;
 	var fade = 100;
@@ -36,12 +38,15 @@ action coin()
     		snd_play(coin_wav,100,0);
 			effect_sprite("star.bmp",p_fountain_sprite,maxv(1,20*time_step),vector(my.x, my.y, my.z),vector(0,0,5));
 			my.alpha = 0; // hide it until it gets removed from level
+			reset(me, CAST);
+			reset(me, SHADOW);
 			set(my, TRANSLUCENT);
 			while (fade> 0)
        		{
-               fade -= 5 * time_step;
-               wait (1);
-			}  		
+        		fade -= 5 * time_step;
+           		wait (1);
+			}
+			wait(1);		
 			ent_remove(me);
     	}
 		wait(1);
@@ -50,7 +55,9 @@ action coin()
 
 action rotate() // tilt
 {
-	set(my, SHADOW);
+	set(me, CAST);
+	set(me, SHADOW);
+	
 	pXent_settype(my, PH_STATIC , PH_POLY);
 	while(my)
 	{
@@ -63,7 +70,9 @@ action rotate() // tilt
 
 action rotate2() // pan
 {
-	set(my, SHADOW);
+	set(me, CAST);
+	set(me, SHADOW);
+	
 	pXent_settype(my, PH_STATIC , PH_POLY);
 	while(my)
 	{
@@ -76,7 +85,9 @@ action rotate2() // pan
 
 action crate()
 {
-	set(my, SHADOW);
+	set(me, CAST);
+	set(me, SHADOW);
+	
 	pXent_settype (my, PH_RIGID, PH_BOX); // set the physics entity type
 	pXent_setmass (my, 1); // and its mass
 	pXent_setfriction (my, 50); // set the friction
@@ -94,7 +105,8 @@ action finish()
 
 action dummy_ball()
 {
-	set(my, SHADOW);
+	set(me, CAST);
+	set(me, SHADOW);
 	pXent_settype (my, PH_RIGID, PH_SPHERE); // set the physics entity type
 	pXent_setmass (my, 15); // and its mass
 	pXent_setfriction (my, 100); // set the friction
@@ -104,6 +116,9 @@ action dummy_ball()
 
 action ball()
 {
+	set(me, CAST);
+	set(me, SHADOW);
+	
 	VECTOR ball_dir;
 	var ball_speed = 100;
 	var jumptimer = -1.5;
@@ -113,8 +128,6 @@ action ball()
 	
 	VECTOR spawn_pos;
 	vec_set(spawn_pos, vector(my.x, my.y, my.z));
-	
-	set(my, SHADOW);
 	
 	player = my;
 	

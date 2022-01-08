@@ -1,6 +1,8 @@
 #include <acknex.h>
 #include <ackphysx.h>
 //#include <default.c>
+#include <mtlView.c>
+#include <shadows.c>
 #include <particles.c>
 #include <windows.h>
 
@@ -96,12 +98,27 @@ function main()
 	AddFontResource("Fonts/Asimov.ttf"); // neat trick from AUM 114 how to use TTF without installing it
 	wait(1);
 	
-	setup_ui();  	
+	setup_ui();
 	
 	physX_open();
 	
 	ent_createlayer("skycube+6.bmp", SKY | CUBE | SHOW, 0); //Layer and sky entities created before the first level_load call are not removed on level change
 	level_load("menu.wmb");
+	
+	if (d3d_shaderversion >= 3) // does only run if shadermodel v3 is found AND A8 Commercial or Pro is used
+	{
+  		shadow_stencil = 8; // activate external shadows
+	
+  		camera.clip_far = 15000;
+  		camera.clip_near = 0.1;
+  		pssm_fbias = 0.0005;
+		pssm_run(3);		
+		stencil_blur(3);
+	}
+	else
+	{
+		shadow_stencil = 0;
+	}	
 
 	set(menu_pan, SHOW);
 	
