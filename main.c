@@ -2,6 +2,7 @@
 #include <ackphysx.h>
 //#include <default.c>
 #include <mtlView.c>
+#include <mtlFX.c>
 #include <shadows.c>
 #include <particles.c>
 #include <windows.h>
